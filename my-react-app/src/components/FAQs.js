@@ -1,12 +1,15 @@
 import React from 'react';
 import '../css/FAQs.css';
+import TestimonialCarousel from './TestimonialCarousel';
 
 function FAQs() {
     return (
     
         <div className="faq-container">
+           <div className="testimonial-container">
+                <TestimonialCarousel />
+            </div>
             <h2>payment & cancellations</h2>
-
             <div className="faq-section">
                 <h3>your deposits & payment plan</h3>
                 <p>

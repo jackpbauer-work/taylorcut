@@ -120,17 +120,36 @@
 }
 
 
-.payment-btn {
-    padding: 5px 10px;
+.payment-btn-deposit,
+.payment-btn-full {
+    padding: 10px 10px;
     border: none;
     border-radius: 10px;
-    background-color: #1322ef;
-    color: white;
+    background-color: #0011ff;
+    color: rgb(249, 248, 250);
     cursor: pointer;
-    width: 50%;
     margin-top: 10px;
-}
+    font-size: 1.2rem;
+    box-shadow: #ddd 0px 0px 3px 0px;
+    font-family: 'Cormorant Garamond', serif;
+    animation: floatAnimation 5s infinite;
+    }
+    
+    @keyframes floatAnimation {
+        0% {
+            transform: translateY(0px);
+        }
+    
+        50% {
+            transform: translateY(-10px);
+        }
+    
+        100% {
+            transform: translateY(0px);
+        }
+    }
+
 
 .payment-btn:hover {
-    background-color: #cad3de;
+    background-color: #0764d6;
 }
