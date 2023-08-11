@@ -104,13 +104,13 @@
 }
 
 .payment-btn {
-    padding: 10px 15px;
+    padding: 5px 10px;
     border: none;
-    border-radius: 5px;
-    background-color: #212aae;
+    border-radius: 10px;
+    background-color: #1322ef;
     color: white;
     cursor: pointer;
-    width: 40%;
+    width: 50%;
     margin-top: 10px;
 }
 

@@ -27,24 +27,49 @@
 }
 
 .title {
-  font-size: 9rem;
+  font-size: calc(6rem + 3vw);
+  /* adjust the values as per your design needs */
   text-transform: uppercase;
   letter-spacing: 0.2em;
   color: white;
   text-shadow: 6px 3px 2px rgba(0, 0, 0, 0.5);
   font-family: 'Cormorant Garamond', serif;
+  margin-bottom: someValue;
+}
+
+.november{
+  font-size: calc(2rem + 1vw);
+  /* adjust the values as per your design needs */
+  letter-spacing: 0.2em;
+  color: white;
+  text-shadow: 6px 3px 2px rgba(0, 0, 0, 0.5);
+  font-family: 'Cormorant Garamond', serif;
+  margin-top: 3rem;
 }
 
 .subtitle {
-  font-size: 3rem;
+  font-size: calc(2rem + 1vw);
+  /* adjust the values as per your design needs */
   text-transform: lowercase;
+  margin-top: -3rem;
   letter-spacing: 0.2em;
-  margin-top: 2rem;
-  /* Increase margin-top */
   color: white;
   text-shadow: 6px 3px 2px rgba(0, 0, 0, 0.5);
   font-family: 'Cormorant Garamond', serif;
   font-style: italic;
+}
+
+.retreatdate{
+  font-size: calc(2rem + 1vw);
+  /* adjust the values as per your design needs */
+  text-transform: lowercase;
+  letter-spacing: 0.2em;
+  margin-top: -1rem;
+  color: white;
+  text-shadow: 6px 3px 2px rgba(0, 0, 0, 0.5);
+  font-family: 'Cormorant Garamond', serif;
+  font-style: italic;
+
 }
 
 .title-div::before {
@@ -58,7 +83,7 @@
   z-index: -2;
 }
 
-@media (max-width: 768px) {
+@media (max-width: 480px) {
   .title-div {
     height: 100%;
     display: flex;
@@ -72,15 +97,19 @@
     display: none;
   }
 
+  .title {
+    font-size: 3rem;
+  }
+
   .title,
   .subtitle {
-    font-size: 10rem;
+ 
     text-shadow: none;
     font-family: sans-serif;
   }
-
   .subtitle {
     margin-top: 0;
+    font-size: 1.5rem;
   }
 
   .title-div::before {

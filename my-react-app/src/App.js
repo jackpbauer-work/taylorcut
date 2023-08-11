@@ -9,6 +9,7 @@ import FAQs from './components/FAQs';
 import Inquiry from './components/Inquiry';
 import ScrollButton from './components/ScrollButton';
 import Price from './components/Price';
+import ScrollToTop from './components/ScrollToTop';
 import './App.css';
 
 // This function is called by the `LoginPage` component when the user logs in
@@ -32,6 +33,7 @@ function App() {
   return (
     <div>
       <NavBar />
+       <ScrollToTop />
       <Routes>
         <Route path="/" element={<Home />} />
         <Route path="/upcoming" element={<Upcoming />} />

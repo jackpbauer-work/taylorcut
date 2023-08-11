@@ -372,6 +372,21 @@
     transition: all 0.3s ease-out;
     position: relative;
     overflow: hidden;
+    animation: floatAnimation 3s infinite;
+}
+
+@keyframes floatAnimation {
+    0% {
+        transform: translateY(0px);
+    }
+
+    50% {
+        transform: translateY(-10px);
+    }
+
+    100% {
+        transform: translateY(0px);
+    }
 }
 
 .reserve-spot-button:hover {

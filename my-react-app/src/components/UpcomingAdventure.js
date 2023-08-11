@@ -28,22 +28,25 @@ function UpcomingAdventure() {
 
   useEffect(() => {
     const adventureImage = document.querySelector('.div-guatemala img');
+    const destinationTitle = document.querySelector('.destination');
+
     if (isVisible) {
       adventureImage.classList.add('is-visible');
+      destinationTitle.classList.add('is-visible');
     } else {
       adventureImage.classList.remove('is-visible');
+      destinationTitle.classList.remove('is-visible');
     }
   }, [isVisible]);
 
   return (
     <div className={`upcoming-adventure ${isVisible ? 'visible' : ''}`}>
-      <h1 className="destination">UPCOMING RETREAT</h1>
-      <h3 className="dates">november 5th - november 10th</h3>
+      <h1 className="destination">upcoming retreat</h1>
       <div className="div-guatemala">
         <img src={lake_atitlan} alt="Upcoming Adventure" className={`fade-in-section ${isVisible ? 'is-visible' : ''}`} />
         <div className="overlay">
           <Link className="button" to={`/upcoming`}>
-            <h1>GUATEMALA</h1> <h2 className="date">november 2023</h2>
+            <h1>Learn more...</h1>
           </Link>
         </div>
       </div>

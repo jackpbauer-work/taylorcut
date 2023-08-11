@@ -69,25 +69,22 @@ import WeDoTitle from './WeDoTitle';
             <WeDoTitle />
             <div style={childDivContainer}>
                 <div data-aos="fade-left" style={childDivStyle}>
-                <h2 style={h2Style}>FITNESS</h2>
-                <p style={pStyle}>daily HIIT - calisthenics, resistance work, tabata, enduring training. beach or jungle, we're not afraid to get dirty.</p>
-                <h4 style={h4Style}>giving is mandatory.</h4>
-                <h4 style={h4Style}>sweating is inevitable.</h4>
-                <h4 style={h4Style}>cooling off in the surf is a given.</h4>
+                <h2 style={h2Style}>fitness</h2>
+                <p style={pStyle}>daily strength - calisthenics, resistance work, tabata, enduring training.</p>
+                <h4 style={h4Style}>dig deep.</h4>
+                <h4 style={h4Style}>feel strong.</h4>
                 </div>
                 <div data-aos="fade-up" style={childDivStyle}>
-                <h2 style={h2Style}>YOGA</h2>
-                <p style={pStyle}>daily yoga - vinyasa, power, restorative. we slow ourselves down everyday with a 60 minute roof deck class.</p>
+                <h2 style={h2Style}>yoga</h2>
+                <p style={pStyle}>daily yoga - vinyasa, power, restorative.</p>
                 <h4 style={h4Style}>inhale deeply.</h4>
                 <h4 style={h4Style}>exhale fully.</h4>
-                <h4 style={h4Style}>release.</h4>
                 </div>
                 <div data-aos="fade-left" style={childDivStyle}>
-                <h2 style={h2Style}>SOLITUDE</h2>
-                <p style={pStyle}>your time - journal, read in a hammock, day dream by the pool, take a surf lesson, explore the town, get a massage.</p>
+                <h2 style={h2Style}>solitude</h2>
+                <p style={pStyle}>your time - journal, read in a hammock, day dream with a view, explore the town, get a massage.</p>
                 <h4 style={h4Style}>you came to unwind.</h4>
                 <h4 style={h4Style}>so do it.</h4>
-                <h4 style={h4Style}>unwind.</h4>
                 </div>
             </div>
             </div>

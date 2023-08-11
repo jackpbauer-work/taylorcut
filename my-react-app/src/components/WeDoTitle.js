@@ -48,22 +48,22 @@ function WeDoTitle() {
         className="fade-in-section"
         style={{
           fontSize: '5.5rem',
-          marginBottom: '0.2rem',
+          marginBottom: '2rem',
         }}
       >
-        WHAT AM I DOING?
+        what am i doing?
       </h1>
       <div style={{ display: 'flex', justifyContent: 'center' }}>
         <h2
           style={{
             fontSize: '1.5rem',
             textAlign: 'center',
-            marginBottom: '0.3rem',
+            marginBottom: '2rem',
             marginRight: '10px',
           }}
           className="subtitle wake"
         >
-          WAKE UP.
+          wake up.
         </h2>
         <h2
           style={{
@@ -74,7 +74,7 @@ function WeDoTitle() {
           }}
           className="subtitle dog"
         >
-          DOWN DOG.
+          down dog.
         </h2>
         <h2
           style={{
@@ -85,7 +85,7 @@ function WeDoTitle() {
           }}
           className="subtitle hiit"
         >
-          SWEAT.
+          sweat.
         </h2>
         <h2
           style={{
@@ -96,7 +96,7 @@ function WeDoTitle() {
           }}
           className="subtitle hiit"
         >
-          COOL DOWN.
+          cool down.
         </h2>
         <h2
           style={{
@@ -107,7 +107,7 @@ function WeDoTitle() {
           }}
           className="subtitle explore"
         >
-          EXPLORE.
+          explore.
         </h2>
         <h2
           style={{
@@ -117,7 +117,7 @@ function WeDoTitle() {
           }}
           className="subtitle repeat"
         >
-          REPEAT.
+          repeat.
         </h2>
       </div>
     </div>

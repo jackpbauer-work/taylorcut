@@ -87,15 +87,13 @@ const whatsthedeal = {
             <div className="payment-options">
                 <h2 className='payment-options-h2'>Payment options</h2>
                 <div className="option">
-                    <h3>Pay in full</h3>
-                    <p>All payments made in full by August 31st will be Entered to win...</p>
-                    <p>FREE ROUND TRIP AIRFARE TICKETS</p>
-                    <button className="payment-btn" onClick={handleFullPayment}>Pay in Full</button>
-                </div>
-                <div className="option">
                     <h3>Reserve your spot (Deposit)</h3>
                     <p>Secure your spot with a $500 non-refundable deposit. The remaining balance will be due later.</p>
-                    <button className="payment-btn" onClick={handleReserveSpot}>Pay Deposit</button>
+                    <button className="payment-btn-deposit" onClick={handleReserveSpot}>Pay Deposit</button>
+                </div>
+                <div className="option">
+                    <h3>PAY IN FULL</h3>
+                    <button className="payment-btn-full" onClick={handleFullPayment}>Pay in Full</button>
                 </div>
             </div>
         </div>
