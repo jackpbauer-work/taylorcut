@@ -5,6 +5,8 @@
     justify-items: center;
     align-items: center;
     padding: 40px;
+    max-width: 800px;
+    margin:0 auto;
     background-color: rgb(1, 31, 52);
 }
 
@@ -88,7 +90,6 @@
     color: white;
     margin-bottom: 20px;
     background-color: rgba(255, 255, 255, 0.146);
-        /* Increase this value as per your needs */
 }
 
 .story-text h1,

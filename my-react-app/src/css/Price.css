@@ -89,19 +89,36 @@
 }
 
 .option h3 {
-    font-size: 1.5em;
+    font-size: 1.8em;
     margin-bottom: 20px;
 }
 
 .option p {
-    font-size: 1.2em;
+    font-size: 1.4em;
     line-height: 1.5;
+    align-items: center;
+    text-align: center;
 }
 
 .payment-options-h2 {
     font-size: 3.0em;
-    margin-bottom: 20px;
+    margin-bottom: 5px;
 }
+
+.winner {
+    margin-top: 5rem;
+    color: white;
+    font-size: 2.0rem;
+    align-items: center;
+}
+
+.made {
+    color: white;
+    font-size: 1.5rem;
+    align-items: center;
+    text-decoration: underline;
+}
+
 
 .payment-btn {
     padding: 5px 10px;

@@ -47,9 +47,9 @@ const whatsthedeal = {
             </div>
         <div className="price-container">
             <div className="prices">
-                <h2>Cost</h2>
-                <p>Shared room for two people: <span>$2,500 per person</span></p>
-                <p>*Shared room for four people: <span>$2,250 per person</span></p>
+                <h2>cost</h2>
+                <p>shared room for two people: <span>$2,500 per person</span></p>
+                <p>*shared room for four people: <span>$2,250 per person</span></p>
                 <div>
                     <p style={{fontSize: '0.8em', color: '#f9f9f9'}}> *Limited availability</p>
                 </div>
@@ -57,42 +57,42 @@ const whatsthedeal = {
 
             <div className="included-excluded-wrapper">
                 <div className="included-cost">
-                    <h1 className="upcoming-included-h1">Included</h1>
+                    <h1 className="upcoming-included-h1">included</h1>
                     <div className="included-container">
                         <ul className="upcoming-included-list">
-                            <li>🔹 Accommodation & local transportation</li>
-                            <li>🔹 Excursions</li>
-                            <li>🔹 Breakfast, lunch, dinner</li>
-                            <li>🔹 Yoga classes</li>
-                            <li>🔹 Meditation + breathwork</li>
-                            <li>🔹 Daily workout</li>
-                            <li>🔹 Cacao ceremony</li>
-                            <li>🔹 Temazcal ceremony</li>
-                            <li>🔹 Transportation for excursion day</li>
-                            <li>🔹 Welcome goodie bag</li>
+                            <li>🔹 accommodation & local transportation</li>
+                            <li>🔹 breakfast, lunch, dinner</li>
+                            <li>🔹 daily yoga + workouts</li>
+                            <li>🔹 meditation + breathwork</li>
+                            <li>🔹 cacao ceremony</li>
+                            <li>🔹 sweat lodge ceremony (temescal)</li>
+                            <li>🔹 welcome kit</li>
                         </ul>
                     </div>
                 </div>
                 <div className="excluded-cost">
-                    <h1 className="upcoming-excluded-h1">Excluded</h1>
+                    <h1 className="upcoming-excluded-h1">excluded</h1>
                     <div className="excluded-container">
                         <ul className="upcoming-excluded-list">
-                            <li>❌ Airfare</li>
-                            <li>❌ Meals/snacks outside of the daily 3, alcohol, and keepsakes</li>
+                            <li>⚪ airfare</li>
+                            <li>⚪ additional snacks/beverages</li>
                         </ul>
                     </div>
                 </div>
             </div>
 
             <div className="payment-options">
-                <h2 className='payment-options-h2'>Payment options</h2>
+                <h2 className='payment-options-h2'>payment options</h2>
+                    <p className='winner'>🛫 FREE ROUND TRIP AIRFARE 🛫 </p>
+                 <p className='made'>Make a payment by 9/15 for a chance to win free roundtrip airfare.</p>
                 <div className="option">
-                    <h3>Reserve your spot (Deposit)</h3>
+                    <h3 className="deposit">RESERVE YOUR SPOT (deposit)</h3>
                     <p>Secure your spot with a $500 non-refundable deposit. The remaining balance will be due later.</p>
                     <button className="payment-btn-deposit" onClick={handleReserveSpot}>Pay Deposit</button>
                 </div>
                 <div className="option">
                     <h3>PAY IN FULL</h3>
+                    <p className="in-full">lock in your spot by paying in full today!</p>
                     <button className="payment-btn-full" onClick={handleFullPayment}>Pay in Full</button>
                 </div>
             </div>
