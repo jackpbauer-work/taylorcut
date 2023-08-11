@@ -1,0 +1,108 @@
+@import url('https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;1,300&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital@1&display=swap');
+
+.title-div {
+  position: relative;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  overflow: hidden;
+  box-shadow: 2px 2px 2px rgba(0, 0, 0, 0.5);
+  padding: 2rem;
+  /* Increase padding */
+}
+
+.background {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-image: url('../images/deck.jpg');
+  background-size: cover;
+  transform-style: preserve-3d;
+  z-index: -1;
+}
+
+.title {
+  font-size: 9rem;
+  text-transform: uppercase;
+  letter-spacing: 0.2em;
+  color: white;
+  text-shadow: 6px 3px 2px rgba(0, 0, 0, 0.5);
+  font-family: 'Cormorant Garamond', serif;
+}
+
+.subtitle {
+  font-size: 3rem;
+  text-transform: lowercase;
+  letter-spacing: 0.2em;
+  margin-top: 2rem;
+  /* Increase margin-top */
+  color: white;
+  text-shadow: 6px 3px 2px rgba(0, 0, 0, 0.5);
+  font-family: 'Cormorant Garamond', serif;
+  font-style: italic;
+}
+
+.title-div::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.5);
+  z-index: -2;
+}
+
+@media (max-width: 768px) {
+  .title-div {
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    overflow: hidden;
+  }
+
+  .background {
+    display: none;
+  }
+
+  .title,
+  .subtitle {
+    font-size: 10rem;
+    text-shadow: none;
+    font-family: sans-serif;
+  }
+
+  .subtitle {
+    margin-top: 0;
+  }
+
+  .title-div::before {
+    display: none;
+  }
+}
+
+.fall-announcement {
+  font-size: 2rem;
+  color: white;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+  transition: opacity 0.5s, transform 0.5s;
+  opacity: 0;
+  transform: translateY(50px);
+}
+
+.fall-announcement.visible {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+.fall-announcement.hidden {
+  opacity: 0;
+  transform: translateY(50px);
+}

@@ -1,0 +1,31 @@
+.scroll-button {
+    position: fixed;
+    bottom: 20px;
+    left: 20px;
+    display: none;
+    z-index: 999;
+}
+
+.scroll-button.show {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 140px;
+    height: 40px;
+    background-color: #072d54c5;
+    color: #fff;
+    border-radius: 20px;
+    font-size: 1.2em;
+    font-family: 'Raleway', sans-serif;
+    cursor: pointer;
+}
+
+.scroll-button.show:hover {
+    background-color: #050f21;
+}
+
+@media screen and (max-width: 768px) {
+    .scroll-button {
+        display: none;
+    }
+}

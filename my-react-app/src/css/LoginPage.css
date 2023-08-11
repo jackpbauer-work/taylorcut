@@ -1,0 +1,60 @@
+@import url('https://fonts.googleapis.com/css2?family=Cormorant+Garamond&family=Lato:wght@100;300&family=Raleway:wght@100&display=swap');
+
+.login-page {
+    background-image: url('../images/sandybeach_background.jpg');
+    background-size: cover;
+    background-position: center;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.login-form {
+    width: 100%;
+    max-width: 400px;
+    padding: 40px;
+    background-color: #ffffffa9;
+    border-radius: 10px;
+    box-shadow: 10px 10px 12px rgba(0, 0, 0, 0.184);
+}
+
+.login-form input {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 10px;
+    font-size: 16px;
+    font-style: uppercase;
+    border: none;
+    border-bottom: 1px solid #ccc;
+    text-align: center;
+    background-color: rgba(255, 255, 255, 0.746);
+}
+
+.login-form {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    box-shadow: 2px 2px 10px #03000060;
+}
+
+.login-form input[type="submit"] {
+    width: 70%;
+    background-color: #0111f8a3;
+    color: #ffffff;
+    border: 2px solid #bdc0e4;
+}
+.login-form input[type="submit"]:hover {
+    background-color: #3440e3;
+}
+
+.login-form a {
+    text-decoration: none;
+    color: #0202a699;
+}
+
+.login-form a:hover {
+    text-decoration: underline;
+}

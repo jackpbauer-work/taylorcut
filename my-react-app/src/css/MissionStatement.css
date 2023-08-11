@@ -1,0 +1,61 @@
+@import url('https://fonts.googleapis.com/css2?family=Cormorant+Garamond&family=Lato:wght@100;300&family=Raleway:wght@100&display=swap');
+
+.mission-statement {
+    display: flex;
+    opacity: 0;
+    transform: translateY(30px);
+    transition: opacity 1.0s ease-out, transform 1.0s ease-out;
+    padding: 10%;
+    justify-content: center;
+    align-items: center;
+}
+
+.mission-statement.visible {
+    opacity: 1;
+    transform: translateY(0px);
+    padding: 4%;
+    background-color: rgb(1, 31, 52);
+}
+
+.mission-content {
+    display: flex;
+    flex-direction: column;
+    max-width: 100vw;
+    justify-content: center;
+    align-items: center;
+}
+
+.mission-statement h2 {
+    font-size: 3vw;
+    letter-spacing: 0.6rem;
+    text-transform: uppercase;
+    font-family: 'Cormorant Garamond', serif;
+    color: #f8f8f8;
+    text-shadow: 7px 3px 3px black;
+    margin-bottom: 1rem;
+    text-align: center;
+    transition: transform 0.3s;
+}
+.mission-statement p {
+    font-size: 1.3vw;
+    line-height: 1.5;
+    font-family: 'Cormorant Garamond', serif;
+    letter-spacing: 0.1rem;
+    font-weight: 600;
+    color: #ebe8e0;
+    text-shadow: 0.2vw 0.1vw 0.4vw #1414146e;
+    padding: 10px;
+    height: 150px;
+    transition: transform 0.3s, opacity 0.6s, visibility 0.6s;
+    opacity: 0;
+    transform: translateY(20px);
+    visibility: hidden;
+    width: 45%;
+}
+
+.mission-statement p.is-visible {
+    opacity: 1;
+    transform: none;
+    visibility: visible;
+    text-align: center;
+}

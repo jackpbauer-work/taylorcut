@@ -1,0 +1,148 @@
+@import url('https://fonts.googleapis.com/css2?family=Cormorant+Garamond&family=Lato:wght@100;300&family=Raleway:wght@100&display=swap');
+
+.testimonial-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    position: relative;
+}
+
+.testimonial-background {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-size: cover;
+    background-position: center;
+    filter: blur(5px);
+    z-index: -1;
+}
+
+.testimonial-carousel {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 80%;
+    max-width: 600px;
+    padding: 2em;
+    background-color: rgba(61, 39, 1, 0.366);
+    border-radius: 1em;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.248);
+}
+
+.testimonial-carousel h1 {
+    font-size: 2.5em;
+    font-weight: bold;
+    margin-bottom: 1em;
+    font-family: 'Cormorant Garamond', serif;
+    color: #f4f4f4;
+}
+
+.testimonial-content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 1em;
+    font-size: 1.2em;
+    font-family: 'Raleway', sans-serif;
+    color: #f4f4f4;
+    text-align: center;
+    transition: transform 0.3s ease;
+}
+
+.testimonial-content:hover {
+    transform: scale(1.1);
+}
+
+.testimonial-image {
+    width: 200px;
+    height: 200px;
+    object-fit: cover;
+    border-radius: 50%;
+    margin-bottom: 1em;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.345);
+}
+
+.controls {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 1em;
+}
+
+.testimonial-button-prev,
+.testimonial-button-next {
+    background-color: #796f6e87;
+    border: none;
+    color: white;
+    padding: 10px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 20px;
+    margin: 4px;
+    cursor: pointer;
+    border-radius: 50%;
+    font-family: 'Cormorant Garamond', serif;
+    position: relative;
+}
+
+.testimonial-button-prev::before,
+.testimonial-button-next::before {
+    content: '';
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 0;
+    height: 0;
+    border-style: solid;
+    border-width: 8px;
+}
+
+.testimonial-button-prev::before {
+    left: 10px;
+    border-color: transparent white transparent transparent;
+    border-width: 16px;
+}
+
+.testimonial-button-next::before {
+    right: 10px;
+    border-color: transparent transparent transparent white;
+    border-width: 15px;
+}
+
+.testimonial-button-prev {
+    position: fixed;
+    right: 30px;
+    top: 50%;
+    transform: translateY(-50%);
+}
+
+.testimonial-button-next {
+    position: fixed;
+    left: 30px;
+    top: 50%;
+    transform: translateY(-50%);
+}
+
+.fade-in-section {
+    opacity: 0;
+    transform: translateY(20vh);
+    visibility: hidden;
+    transition: opacity 0.6s ease-out, transform 1.2s ease-out;
+    will-change: opacity, visibility;
+}
+
+.fade-in-section.is-visible {
+    opacity: 1;
+    transform: none;
+    visibility: visible;
+}

@@ -1,0 +1,30 @@
+.retreats-container {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    justify-content: space-around;
+
+}
+
+.retreat {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 200px;
+    margin: 10px;
+    border: 1px solid black;
+}
+
+.retreat h2 {
+    margin-top: 0;
+}
+
+.retreat img {
+    width: 100%;
+    height: auto;
+}
+
+.retreat p {
+    margin-top: 10px;
+}

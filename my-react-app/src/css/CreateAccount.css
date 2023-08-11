@@ -1,0 +1,76 @@
+@import url('https://fonts.googleapis.com/css2?family=Cormorant+Garamond&family=Lato:wght@100;300&family=Raleway:wght@100&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Amatic+SC:wght@700&family=Permanent+Marker&family=Shadows+Into+Light&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Amatic+SC:wght@700&family=Aref+Ruqaa+Ink:wght@400;700&family=Kalam:wght@300&family=Kotta+One&family=Permanent+Marker&family=Shadows+Into+Light&family=Source+Code+Pro:wght@200&family=Waiting+for+the+Sunrise&display=swap');
+
+.create-account-page {
+    background-image: url('../images/yoga_background.jpg');
+    background-size: cover;
+    background-position: center;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.create-account-page h1 {
+    font-size: 60px;
+    font-weight: 700;
+    /* Update the font weight for thicker text */
+    margin-bottom: 20px;
+    font-family:'Permanent Marker', cursive;
+    color: white
+}
+
+.create-account-form {
+    width: 100%;
+    max-width: 400px;
+    padding: 40px;
+    background-color: #f5efefab;
+    border-radius: 10px;
+    box-shadow: 10px 10px 12px rgba(0, 0, 0, 0.184);
+}
+
+
+.create-account-form input {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 10px;
+    font-size: 18px;
+    border: none;
+    border-bottom: 1px solid #ccc;
+    background-color: transparent;
+    color: #fff;
+    /* Update the text color to white */
+}
+
+
+.create-account-form button[type="submit"] {
+    background-color: #2f7eedc1;
+    color: #ffffff;
+    border-radius: 10px;
+    padding: 10px;
+    width: 100%;
+    cursor: pointer;
+    font-size: 16px;
+}
+
+.create-account-form button[type="submit"]:hover {
+    background-color: #3440e3;
+}
+
+.create-account-form a {
+    text-decoration: none;
+    font-size: 18px;
+    color: #010111c7;
+}
+
+.create-account-form a:hover {
+    text-decoration: underline;
+}
+
+.create-account-form .already-accounted-for {
+    display: flex;
+    justify-content: center;
+    margin-top: 10px;
+}

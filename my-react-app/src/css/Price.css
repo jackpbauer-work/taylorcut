@@ -1,0 +1,119 @@
+@import url('https://fonts.googleapis.com/css2?family=Cormorant+Garamond&family=Lato:wght@100;300&family=Raleway:wght@100&display=swap');
+
+.price-container {
+    width: 80%;
+    margin: auto;
+    font-family: 'Cormorant Garamond', serif;
+    color: white;
+}
+
+
+.price-h1 {
+    font-size: 3.5em;
+    font-weight: bold;
+    margin-bottom: 10px;
+    text-align: center;
+    color: white;
+    margin-top: 150px;
+}
+
+.price-p {
+    font-size: 1.2em;
+    line-height: 1.5;
+}
+
+.price-container h1,
+.price-container h2 {
+    text-align: center;
+}
+
+.prices {
+    margin: 20px 0;
+    padding: 20px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    text-align: center;
+}
+
+.prices h2 {
+    font-size: 2.5em;
+    margin-bottom: 20px;
+}
+
+.prices p {
+    font-size: 1.2em;
+    line-height: 1.5;
+}
+
+.prices span {
+    font-size: 1.2em;
+    font-weight: bold;
+}
+
+.included-excluded-wrapper,
+.payment-options {
+    margin: 20px 0;
+    padding: 20px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.included-cost,
+.excluded-cost {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 45%;
+    font-size: 1.5em;
+}
+
+.upcoming-included-list,
+.upcoming-excluded-list {
+    list-style-type: none;
+    padding: 0;
+    font-size: .8em;
+}
+
+.payment-options {
+    flex-direction: column;
+    align-items: center;
+}
+.option {
+    margin-bottom: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-top: 80px;
+}
+
+.option h3 {
+    font-size: 1.5em;
+    margin-bottom: 20px;
+}
+
+.option p {
+    font-size: 1.2em;
+    line-height: 1.5;
+}
+
+.payment-options-h2 {
+    font-size: 3.0em;
+    margin-bottom: 20px;
+}
+
+.payment-btn {
+    padding: 10px 15px;
+    border: none;
+    border-radius: 5px;
+    background-color: #212aae;
+    color: white;
+    cursor: pointer;
+    width: 40%;
+    margin-top: 10px;
+}
+
+.payment-btn:hover {
+    background-color: #cad3de;
+}

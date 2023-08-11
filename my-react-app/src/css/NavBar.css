@@ -1,0 +1,103 @@
+.nav {
+    position: fixed;
+    top: 0;
+    z-index: 100;
+    width: 98vw;
+    font-size: 1.2rem;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0.9rem 1.2rem;
+    background-color: rgba(255, 255, 255, 0.602);
+    transition: background-color 0.3s ease;
+}
+
+.nav_div {
+    display: flex;
+    align-items: center;
+    gap: .5rem;
+}
+
+.nav.scrolled {
+    background-color: rgb(1, 31, 52);
+    transition: background-color 0.3s ease;
+    box-shadow: 5px 5px 9px rgba(0, 0, 0, 0.1);
+    /* This will give a slight shadow effect when scrolled */
+}
+
+.header-content {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+}
+
+.logo-container {
+    display: flex;
+    align-items: center;
+}
+
+.logo-image {
+    height: 70px;
+    padding: 0 30px;
+}
+
+.hamburger {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    width: 2rem;
+    height: 2rem;
+    cursor: pointer;
+}
+
+.hamburger div {
+    width: 2rem;
+    height: 0.25rem;
+    background: rgb(10, 46, 230);
+    /* This is a blue color */
+}
+
+.menu {
+    display: none;
+    flex-direction: row;
+    align-items: center;
+}
+
+.menu.open {
+    display: flex;
+}
+
+@media screen and (min-width: 769px) {
+    .menu {
+        display: flex;
+    }
+}
+
+ul {
+    font-size: 5px;
+    list-style-type: none;
+    padding-left: 0px;
+}
+
+li {
+    padding: 10px 15px;
+    /* Increased horizontal padding for spacing */
+    color: #eaecf0;    
+}
+
+li a {
+    font-size: 20px;
+    /* This will make the text slightly larger */
+    font-style: bold;
+    color: #fcfcfc;    /* This will make the link text blue */
+    text-decoration: none;
+    /* This will remove underline from link text */
+    transition: color 0.5s ease;
+    /* This will add a transition to the color property */
+}
+
+li a:hover {
+    color: rgb(141, 170, 255);
+    /* This will slightly change the color of the link text when hovered */
+}

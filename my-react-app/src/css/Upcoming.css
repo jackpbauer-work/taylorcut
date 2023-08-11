@@ -1,0 +1,411 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Cormorant+Garamond&family=Lato:wght@100;300&family=Raleway:wght@100&display=swap');
+
+.upcoming-page {
+    display: flex;
+    flex-direction: column;
+    overflow: hidden;
+    background-color: rgb(1, 31, 52);
+}
+
+.upcoming-destination {
+    position: relative;
+    height: 100vh;
+    background-image: url('../images/lake_atitlan2.jpg');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+}
+
+.upcoming-title {
+    position: relative;
+    font-size: 7em;
+    color: hsl(0, 0%, 97%);
+    text-align: center;
+    font-family: 'Cormorant Garamond', serif;
+    margin-top: 20%;
+    margin-bottom: 0px;
+    padding-right: 180px;
+    max-width: 30%;
+    text-shadow: 0px 0px 10px #000000a7;
+}
+
+.upcoming-destination-p {
+    position: relative;
+    font-size: 2.4em;
+    color: #fff;
+    text-align: center;
+    z-index: 1;
+    font-family: 'Cormorant Garamond', serif;
+    max-width: 70%;
+    text-shadow: 0px 0px 20px #000000a7;
+    font-style: italic;
+}
+
+.upcoming-destination:before {
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.5);
+}
+
+.upcoming-rooming {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    height: 120vh;
+    background-color: #f8f7fa;
+    /* justify-content: space-between; */
+    background-color: rgb(1, 31, 52);
+}
+
+.upcoming-rooming p {
+    font-size: 1.8em;
+    padding-left: 10%;
+    color: rgb(66, 65, 65);
+    font-family: 'Cormorant Garamond', serif;
+    color: white;
+    font-style: italic;
+    text-shadow: 2px 2px 20px #000000;
+}
+
+.image-title-description {
+    display: grid;
+    grid-template-columns: 40% 60%;
+    width: 100%;
+    position: relative;
+    padding: 100px 20px;
+    align-items: center;
+}
+
+.bamboo-house {
+    grid-column: 1;
+    width: 90%;
+    height: auto;
+    object-fit: cover;
+    border-radius: 20px;
+    margin: 10px;
+    box-shadow: 0 2px 20px 5px rgba(0, 0, 0, 0.901);
+}
+
+.bamboo-title,
+.rooming-description {
+    grid-column: 2;
+    justify-self: start;
+    color: #e8edf1;
+    font-family: 'Cormorant Garamond', serif;
+}
+
+.bamboo-title {
+    font-size: 4em;
+    margin-bottom: 5px;
+    padding-left: 10%;
+}
+
+.room-images {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    position: relative;
+}
+
+.bamboo-balcony {
+    width: 300px;
+    height: 200px;
+    object-fit: cover;
+    border-radius: 20px;
+    margin: 10px;
+    transition: transform 0.6s ease-in-out;
+    box-shadow: 2px 2px 5px 2px rgba(0, 0, 0, 0.901);
+}
+
+.bamboo-balcony:hover {
+    transform: scale(1.5);
+}
+
+.bedroom-situation {
+    display: grid;
+    grid-template-columns: 1fr 3fr;
+    gap: 5px;
+    padding: 100px 0;
+    background-color: #bbb6c4;
+    overflow: auto;
+    background-color: rgb(1, 31, 52);
+}
+
+.bedroom-text {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.bedroom-list-h1 {
+    font-size: 2.5em;
+    color: #e8edf1;
+    margin-bottom: 0px;
+    padding-left: 20px;
+    font-family: 'Cormorant Garamond', serif;
+}
+
+.bedroom-images {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+}
+
+.bedroom {
+    width: 100%;
+    height: auto;
+    object-fit: cover;
+    border-radius: 10px;
+    transition: transform 0.3s ease-in-out;
+}
+
+.bedroom:hover {
+    transform: scale(1.1);
+}
+
+/* 
+/* New CSS */
+.itinerary-section {
+    padding: 4em;
+    box-shadow: 0 2px 15px rgba(0, 0, 0, 0.1);
+    border-radius: 5px;
+    background-color: rgb(1, 31, 52);
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    /* aligns items in the center horizontally */
+    align-items: center;
+    /* aligns items in the center vertically */
+    min-height: 500px;
+    /* change to your preference */
+    width: 100%;
+}
+
+.itinerary-item {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    min-height: 300px;
+    /* change to your preference */
+    width: 40%;
+    /* change to your preference, this is just an example */
+    color: #333;
+    background: #ffffff68;
+    font-family: Arial, sans-serif;
+    text-align: center;
+    box-shadow: 0 2px 5px 0 rgba(0, 0, 0, 0.15);
+    border-radius: 10px;
+    margin: auto;
+    /* Add this to center the div in the middle of the parent div */
+}
+
+.itinerary-title {
+    color: #f9f9f9;
+    margin-bottom: 1em;
+    font-size: 4em;
+    font-family: 'Cormorant Garamond', serif;
+    text-align: center;
+    width: 100%;
+}
+
+.travel-dates {
+    font-size: 1.6em;
+    color: #f9f9f9;
+    font-family: 'Cormorant Garamond', serif;
+    text-align: center;
+    width: 100%;
+    margin-bottom: 1em;
+}
+.carousel.carousel-slider {
+    width: 40%;
+    /* Should be the same as the width of .itinerary-item */
+    position: relative;
+    /* Add this */
+}
+
+.carousel.carousel-slider .control-arrow {
+    top: 50%;
+    position: absolute;
+    /* Change to absolute */
+    transform: translateY(-50%);
+    /* Center vertically */
+    width: 30px;
+    /* Adjust as necessary */
+    height: 220px;
+    /* Adjust as necessary */
+    background-color: #000000;
+    box-shadow: 0 2px 5px 0 rgba(240, 235, 235, 0.806);
+    border-radius: 5em;
+    z-index: 1;
+    /* Make sure arrows are on top */
+}
+
+.carousel.carousel-slider .control-next.control-arrow {
+    right: 428px;
+    /* Half of the width, adjust as necessary */
+}
+
+.carousel.carousel-slider .control-prev.control-arrow {
+    left: 428px;
+    /* Half of the width, adjust as necessary */
+}
+
+.carousel.carousel-slider .control-next.control-arrow:before {
+    border-left: 18px solid #c9c7c7;
+}
+
+.carousel.carousel-slider .control-prev.control-arrow:before {
+    border-right: 18px solid #c9c7c7;
+}
+.itinerary-item h2 {
+    margin: 0;
+    font-size: 8em;
+    padding: 2%;
+    color:#ffffff;
+    font-family: 'Cormorant Garamond', serif;
+}
+
+.itinerary-item h3 {
+    margin: 1em 0em 0 0em;
+    padding: 4%;
+    font-size: 4em;
+    color: #ffffff;
+    font-family: 'Cormorant Garamond', serif;
+}
+
+.itinerary-item p {
+    margin: 1em 0em 0 0em;
+    padding: 3%;
+    font-size: 3em;
+    color: #ffffff;
+    font-family: 'Cormorant Garamond', serif;
+} 
+
+.activities-section {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background-color: rgb(1, 31, 52);
+    color: #e8edf1;
+    padding: 2em;
+    font-family: 'Cormorant Garamond', serif;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+}
+
+.activities-title {
+    font-size: 3.5em;
+    margin-bottom: 1em;
+    padding-top: 2em;
+        text-shadow: 1px 2px 5px #6b6a6aa7;
+}
+
+
+.activities-content ul {
+    list-style-type: none;
+    padding: 0;
+    font-size: 2em;
+    text-align: center;
+}
+
+.activities-content ul li {
+    margin-bottom: 0.5em;
+
+}
+
+.activities-images {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 2em;
+    width: 100%;
+    padding: 2em 0;
+}
+
+.activities-images img {
+    width: 100%;
+    height: 300px;
+    /* you can adjust this to the height you want */
+    object-fit: cover;
+    border-radius: 10px;
+    transition: transform 0.3s ease-in-out;
+}
+
+.activities-images img:hover {
+    transform: scale(1.05);
+}
+
+.upcoming-book-now {
+    position: relative;
+    height: 100vh;
+    background-image: url('../images/upcoming_guatemala1.jpg');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.reserve-spot-button {
+    display: inline-block;
+    padding: 2em 3em;
+    margin-top: 2em;
+    font-family: 'Cormorant Garamond', serif;
+    font-size: 3.5rem;
+    font-weight: 700;
+    color: rgb(255, 255, 255);
+    background: none;
+    border: 2px solid white;
+    cursor: pointer;
+    text-transform: uppercase;
+    text-decoration: none;
+    transition: all 0.3s ease-out;
+    position: relative;
+    overflow: hidden;
+}
+
+.reserve-spot-button:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.511);
+    color: #000;
+    /* Changing color to black on hover */
+    background-color: #ffffff3d;
+    /* Changing background to white on hover */
+}
+
+.reserve-spot-button::before,
+.reserve-spot-button::after {
+    content: "";
+    position: absolute;
+    top: -10%;
+    left: -10%;
+    width: 120%;
+    height: 120%;
+    background-color: rgba(255, 255, 255, 0.1);
+    opacity: 0;
+    transform: scale(0);
+    transition: opacity 0.3s ease-out, transform 0.3s ease-out;
+}
+
+
+
+.upcoming-book-now img {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: auto;
+    transform: translateY(-50%);
+    max-height: 100vh;
+}
+
