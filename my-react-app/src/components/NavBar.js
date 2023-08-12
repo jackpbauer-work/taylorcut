@@ -56,16 +56,16 @@ function NavBar() {
       {(isOpen || isScreenLarge) && (
         <ul className={`menu ${isOpen ? 'open' : ''}`}>
           <li>
-            <Link to="/upcoming">The Trip</Link>
+            <Link to="/upcoming">the trip</Link>
           </li>
           <li>
-            <Link to="/pricing">What's Included</Link>
+            <Link to="/pricing">included</Link>
           </li>
           <li>
-            <Link to="/about">Our Story</Link>
+            <Link to="/about">our story</Link>
           </li>
           <li>
-            <Link to="/faqs">Get Informed</Link>
+            <Link to="/faqs">get informed</Link>
           </li>
         </ul>
       )}

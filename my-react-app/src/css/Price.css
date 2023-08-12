@@ -81,7 +81,6 @@
     align-items: center;
 }
 .option {
-    margin-bottom: 20px;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -95,20 +94,19 @@
 
 .option p {
     font-size: 1.4em;
-    line-height: 1.5;
+    line-height: .5;
     align-items: center;
     text-align: center;
 }
 
 .payment-options-h2 {
     font-size: 3.0em;
-    margin-bottom: 5px;
+    margin-bottom: -3rem;
 }
 
 .winner {
-    margin-top: 5rem;
     color: white;
-    font-size: 2.0rem;
+    font-size: 1.5rem;
     align-items: center;
 }
 

@@ -83,16 +83,15 @@ const whatsthedeal = {
 
             <div className="payment-options">
                 <h2 className='payment-options-h2'>payment options</h2>
-                    <p className='winner'>🛫 FREE ROUND TRIP AIRFARE 🛫 </p>
-                 <p className='made'>make a payment by 9/15 for a chance to win free roundtrip airfare.</p>
                 <div className="option">
                     <h3 className="deposit">RESERVE YOUR SPOT (deposit)</h3>
-                    <p>secure your spot with a $500 non-refundable deposit. the remaining balance will be due later.</p>
+                    <p>submit $500 deposit by 9/15 to receive $150 early bird discount </p>
                     <button className="payment-btn-deposit" onClick={handleReserveSpot}>pay deposit</button>
                 </div>
                 <div className="option">
                     <h3>PAY IN FULL</h3>
-                    <p className="in-full">lock in your spot by paying in full today!</p>
+                    <p className="in-full">submit entire payment by 9/15 to receive raffel ticket for</p>
+                    <p className='winner'>🛫 FREE ROUND TRIP AIRFARE 🛫 </p>
                     <button className="payment-btn-full" onClick={handleFullPayment}>pay in full</button>
                 </div>
             </div>
