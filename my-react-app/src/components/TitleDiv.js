@@ -30,7 +30,7 @@ const handleScroll = () => {
     <div className="title-div">
       <div className="background"></div>
       <h2 className="november" ref={dateRef}>Guatemala</h2>
-      <h2 className="retreatdate" ref={retreatdateRef}> November 5th - November 10th</h2>
+      <h2 className="retreatdate" ref={retreatdateRef}> November 5th - November 11th</h2>
       <h1 className="title" ref={titleRef}>TaylorCut.</h1>
       <h2 className="subtitle" ref={subtitleRef}>Retreat Yourself</h2>
     </div>
