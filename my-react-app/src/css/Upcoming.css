@@ -302,15 +302,14 @@
     justify-content: center;
     background-color: rgb(1, 31, 52);
     color: #e8edf1;
-    padding: 2em;
+    padding: 1vw;
     font-family: 'Cormorant Garamond', serif;
     text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
 }
 
 .activities-title {
     font-size: 3.5em;
-    margin-bottom: 1em;
-    padding-top: 2em;
+    padding-top: 1vw;
         text-shadow: 1px 2px 5px #6b6a6aa7;
 }
 
@@ -484,10 +483,8 @@
      display: grid;
      /* Ensure that the container uses a grid layout */
      grid-template-columns: repeat(2, 1fr);
-     /* This makes two images appear side by side */
-  
-     /* This provides spacing between the images */
-            transform-origin: center;
+     
+    
 
     }
 
@@ -495,12 +492,12 @@
         width: 80%;
         height: auto;
         max-width: 100%;
-        transform-origin: center;
+    
      
     }
 
     .room-images img:hover {
-        transform: scale(1.3);
+        transform: none;
     }
 
     .activities-section {
@@ -535,11 +532,10 @@
         max-width: 100%;
         margin: 0 auto;
         /* Center the images in their grid cell */
-        transform-origin: center;
         }
 
     .activities-images img:hover {
-        transform: scale(1.5);
+        transform: none;
     }
 
     .reserve-spot-button {
