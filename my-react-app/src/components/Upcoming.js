@@ -1,6 +1,4 @@
 import React, {useState, useEffect} from 'react';
-// import { Carousel } from 'react-responsive-carousel';
-import "react-responsive-carousel/lib/styles/carousel.min.css";
 import '../css/Upcoming.css';
 import lake_atitlan_skytop_view from '../images/lake_atitlan_skytop_view.jpeg';
 import lake_atitlan_dining from '../images/lake_atitlan_dining.jpeg';
