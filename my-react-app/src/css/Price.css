@@ -151,3 +151,61 @@
 .payment-btn:hover {
     background-color: #0764d6;
 }
+
+@media (max-width: 480px) {
+    .price-container {
+        width: 95%;
+        font-size: 0.9em;
+        /* adjust main container's font size */
+    }
+
+    .price-h1 {
+        font-size: 2.5em;
+        margin-top: 90px;
+        /* decrease margin-top for smaller screens */
+    }
+
+    .prices h2 {
+        font-size: 2em;
+        /* adjust h2 font size inside .prices */
+    }
+
+    .included-excluded-wrapper,
+    .payment-options {
+        flex-direction: column;
+        /* stack elements vertically */
+    }
+
+    .included-cost,
+    .excluded-cost {
+        width: 100%;
+    }
+
+    .payment-options-h2 {
+        font-size: 2.5em;
+        margin-bottom: -1.5rem;
+        /* adjust margin */
+    }
+
+    .option {
+        padding-top: 40px;
+        /* adjust padding */
+    }
+
+    .option h3 {
+        font-size: 1.5em;
+        /* adjust h3 font size inside .option */
+    }
+
+    .option p {
+        font-size: 1.2em;
+        line-height: 1.2em;
+        /* adjust p font size inside .option */
+    }
+
+    .payment-btn-deposit,
+    .payment-btn-full {
+        padding: 5px 5px;
+        font-size: 1rem;
+    }
+}

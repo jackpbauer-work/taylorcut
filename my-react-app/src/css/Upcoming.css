@@ -418,7 +418,6 @@
 }
 
 
-
 .upcoming-book-now img {
     position: absolute;
     top: 0;
@@ -429,3 +428,131 @@
     max-height: 100vh;
 }
 
+@media (max-width: 480px) {
+    .upcoming-destination {
+        width: 100%;
+        height: 40vh;
+        }
+
+    .upcoming-title {
+        font-size: 3em;
+        max-width: 100%;
+        margin-top: 5%;
+        text-align: center;
+    }
+
+    .upcoming-destination p {
+        font-size: 1.2em;
+        max-width: 90%;
+        text-align: center;
+    }
+
+    .image-title-description {
+        grid-template-columns: 1fr 1fr;
+        padding: 50px 2px;
+        font-size: .8em;
+    }
+
+    .bamboo-title,
+    .rooming-description {
+        padding-left: 5%;
+    }
+
+    .bamboo-house,
+    .bamboo-title,
+    .rooming-description {
+        margin: 20px 0;
+    }
+
+    .bamboo-title {
+        font-size: 2.5em;
+        padding-left: 0;
+        text-align: center;
+    }
+
+    .bedroom-situation {
+        grid-template-columns: 1fr;
+        padding: 50px 0;
+    }
+
+    .bedroom-list-h1 {
+        font-size: 2em;
+        text-align: center;
+    }
+
+   .room-images {
+     display: grid;
+     /* Ensure that the container uses a grid layout */
+     grid-template-columns: repeat(2, 1fr);
+     /* This makes two images appear side by side */
+  
+     /* This provides spacing between the images */
+            transform-origin: center;
+    }
+
+    .room-images img {
+        width: 80%;
+        height: auto;
+        max-width: 100%;
+        transform-origin: center;
+     
+    }
+
+    .room-images img:hover {
+        transform: scale(2.00);
+    }
+
+    .activities-section {
+        padding: 0;
+        font-size: 1.5em;
+        text-align: center;
+        margin-top: -45%;
+    }
+
+    .activities-title {
+        font-size: 2.0em;
+        margin-top: 5%;
+    }
+
+    .activities-content ul {
+        font-size: 1.2em;
+        margin-bottom: 10%;
+    }
+    
+    .activities-images {
+        display: grid;
+        /* Ensure that the container uses a grid layout */
+        grid-template-columns: repeat(2, 1fr);
+        /* This makes two images appear side by side */
+        gap: 10px;
+        /* This provides spacing between the images */
+    }
+    
+    .activities-images img {
+        width: 100%;
+        /* Reduced to 80% of their container width */
+        height: 80%;
+        /* Preserve the original aspect ratio of the images */
+        max-width: 100%;
+        margin: 0 auto;
+        /* Center the images in their grid cell */
+        transform-origin: center;
+        }
+
+    .activities-images img:hover {
+        transform: scale(2.0);
+    }
+
+    .reserve-spot-button {
+        padding: 1em 2em;
+        margin-top: 1em;
+        text-align: center;
+        font-size: 1.5rem;
+    }
+
+    .upcoming-book-now {
+                width: 100% !important;
+                height: 30vh !important;
+            }
+
+}

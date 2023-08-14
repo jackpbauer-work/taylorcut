@@ -25,6 +25,8 @@ import lake_atitlan_cacao from '../images/lake_atitlan_cacao.jpg';
 import lake_atitlan_temescal from '../images/lake_atitlan_temescal.jpg';
 import lake_atitlan_coffee from '../images/lake_atitlan_coffee.png';
 
+
+
 function Upcoming() {
   const [offsetY, setOffsetY] = useState(0);  
   const handleScroll = () => setOffsetY(window.pageYOffset);

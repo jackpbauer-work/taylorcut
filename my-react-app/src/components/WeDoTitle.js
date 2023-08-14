@@ -4,6 +4,8 @@ import '../css/WeDoTitle.css';
 function WeDoTitle() {
   const [isVisible, setIsVisible] = useState(false);
 
+  const isMobile = window.innerWidth <= 768;
+
   useEffect(() => {
     const handleScroll = () => {
       const titleStatement = document.querySelector('.we-do-title');
@@ -39,7 +41,8 @@ function WeDoTitle() {
     justifyContent: 'center',
     alignItems: 'center',
     textAlign: 'center',
-    marginBottom: '0px', // Adjust as needed for space between WeDoTitle and the next div
+    marginBottom: isMobile ? '2px' : '0px', 
+    marginTop: isMobile ? '20vw' : '0px', 
   };
 
   return (
@@ -47,18 +50,17 @@ function WeDoTitle() {
       <h1
         className="fade-in-section"
         style={{
-          fontSize: '5.5rem',
-          marginBottom: '2rem',
-        }}
+          fontSize: isMobile ? '3.0rem' : '5.0rem',
+          }}
       >
         what am i doing?
       </h1>
-      <div style={{ display: 'flex', justifyContent: 'center' }}>
+      <div style={{ display: 'flex', flexWrap: 'wrap', justifyContent: 'center' }}>
         <h2
           style={{
             fontSize: '1.5rem',
             textAlign: 'center',
-            marginBottom: '2rem',
+            marginBottom: isMobile ? '1rem' : '2rem',
             marginRight: '10px',
           }}
           className="subtitle wake"
@@ -69,7 +71,7 @@ function WeDoTitle() {
           style={{
             fontSize: '1.5rem',
             textAlign: 'center',
-            marginBottom: '0.3rem',
+            marginBottom: isMobile ? '1rem' : '0.3rem',
             marginRight: '10px',
           }}
           className="subtitle dog"
@@ -80,7 +82,7 @@ function WeDoTitle() {
           style={{
             fontSize: '1.5rem',
             textAlign: 'center',
-            marginBottom: '0.3rem',
+            marginBottom: isMobile ? '1rem' : '0.3rem',
             marginRight: '10px',
           }}
           className="subtitle hiit"
@@ -91,10 +93,10 @@ function WeDoTitle() {
           style={{
             fontSize: '1.5rem',
             textAlign: 'center',
-            marginBottom: '0.3rem',
+            marginBottom: isMobile ? '1rem' : '0.3rem',
             marginRight: '10px',
           }}
-          className="subtitle hiit"
+          className="subtitle cool"
         >
           cool down.
         </h2>
@@ -102,7 +104,7 @@ function WeDoTitle() {
           style={{
             fontSize: '1.5rem',
             textAlign: 'center',
-            marginBottom: '0.3rem',
+            marginBottom: isMobile ? '1rem' : '0.3rem',
             marginRight: '10px',
           }}
           className="subtitle explore"
@@ -113,7 +115,7 @@ function WeDoTitle() {
           style={{
             fontSize: '1.5rem',
             textAlign: 'center',
-            marginBottom: '0.3rem',
+            marginBottom: isMobile ? '1rem' : '0.3rem',
           }}
           className="subtitle repeat"
         >

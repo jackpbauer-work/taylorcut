@@ -1,7 +1,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Cormorant+Garamond&family=Lato:wght@100;300&family=Raleway:wght@100&display=swap');
 
 .upcoming-adventure {
-    height: 125vh;
+    height: 100vh;
     background-color: rgb(1, 31, 52);
     display: flex;
     flex-direction: column;
@@ -143,4 +143,91 @@
 .button:hover::after {
     opacity: 1;
     transform: scale(1);
+}
+
+/* Existing styles remain as they are */
+
+/* Start of mobile styles */
+@media only screen and (max-width: 768px) {
+    .upcoming-adventure {
+        height: 80vh;
+        /* Adjust height */
+    }
+
+    .destination {
+        font-size: 24px;
+        /* Adjust font-size */
+        margin-top: 60vw;
+    }
+
+    .dates {
+        font-size: 18px;
+        /* Adjust font-size */
+        margin-top: 1vh;
+    }
+
+    .div-guatemala {
+        width: 95%;
+        /* Take up almost full width on mobile */
+    }
+
+    .button {
+        padding: 1em 2em;
+        /* Scale down padding */
+        font-size: 1.5rem;
+        /* Adjust font-size */
+        border: 1px solid white;
+        /* Reduce border width */
+    }
+
+    .button h1 {
+        font-size: 2rem;
+        /* Adjust font-size */
+    }
+
+    .button .date {
+        font-size: 1rem;
+        /* Adjust font-size */
+    }
+}
+
+@media only screen and (max-width: 480px) {
+
+    /* typical iPhone screen width */
+    .destination {
+        font-size: 40px;
+        /* Reduced font-size for better mobile viewing */
+        margin-top: 40vw;
+    }
+
+    .dates {
+        font-size: 18px;
+        /* Reduced font-size for better mobile viewing */
+    }
+
+    .div-guatemala {
+        width: 100%;
+        /* Image container takes full width on mobile */
+        height: 40vh;
+        /* Reduced height for mobile, adjust as required */
+    }
+
+
+    .button {
+        padding: 1em 1.5em;
+        /* Reduced padding */
+        font-size: 1.5rem;
+        /* Adjusted font size */
+        margin-top: 1em;
+    }
+
+    .button h1 {
+        font-size: 2rem;
+        /* Adjusted font size */
+    }
+
+    .button .date {
+        font-size: 1rem;
+        /* Adjusted font size */
+    }
 }

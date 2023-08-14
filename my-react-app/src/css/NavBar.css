@@ -54,7 +54,7 @@
 .hamburger div {
     width: 2rem;
     height: 0.25rem;
-    background: rgb(10, 46, 230);
+    background: rgb(237, 238, 242);
     /* This is a blue color */
 }
 
@@ -100,4 +100,61 @@ li a {
 li a:hover {
     color: rgb(141, 170, 255);
     /* This will slightly change the color of the link text when hovered */
+}
+@media only screen and (max-width: 768px) {
+    .nav {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        z-index: 2000;
+        font-size: 1rem;
+        padding: 0.5rem;
+    }
+
+    /* Override for homepage */
+    .home .nav {
+        position: static;
+        /* Resets the nav positioning on the homepage */
+    }
+
+    li {
+        padding: 10px 10px;
+    }
+
+    li a {
+        font-size: 18px;
+    }
+
+    .hamburger {
+        width: 1.5rem;
+        height: 2.0rem;
+    }
+
+    .hamburger div {
+        width: 2.0rem;
+        height: 0.2rem;
+    }
+
+    .logo-image {
+        height: 50px;
+        padding: 0 5px;
+    }
+
+    .menu {
+        flex-direction: column;
+        position: absolute;
+        top: 100%;
+        left: -5vw;
+        background-color: rgb(1, 31, 52);
+        width: 100%;
+    }
+
+    .menu:not(.open) {
+        display: none;
+    }
+
+    .main-content {
+        padding-top: 50px;
+        /* Adjust this value according to your navbar's height */
+    }
 }

@@ -36,7 +36,7 @@ function MissionStatement() {
   return (
     <div className={`mission-statement ${isVisible ? 'visible' : ''}`}>
       <div className="mission-content">
-        <h2>OUR MISSION</h2>
+        <h2>our mission</h2>
         <p className="fade-in-section">
           we create soul-stirring retreats to off-the-beaten-path locales. our mission? to power you up, help you disconnect from the digital world, and build deep-rooted connections, all while soaking up the raw beauty and cultural vitality of exotic places. rediscover yourself through fitness, friendship, and adventure.
         </p>

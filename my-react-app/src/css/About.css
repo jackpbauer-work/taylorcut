@@ -245,3 +245,116 @@
     
 }
 
+/* Your default CSS for larger screens */
+
+/* ... (all your current CSS here) ... */
+
+/* Mobile Styles */
+@media (max-width: 480px) {
+
+    .story_container {
+        grid-template-columns: 1fr;
+        padding: 20px;
+        max-width: 100%;
+    }
+
+    .story-title {
+        padding-top: auto;
+    }
+
+    .story-title .commit-header {
+        font-size: 1.5em;
+    }
+
+    .story-title h1 {
+        font-size: 3em;
+        margin-bottom: 30px;
+    }
+
+    .values-container {
+        grid-template-columns: 2fr;
+        margin-bottom: auto;
+        margin-top: auto;
+
+    }
+
+    .values-container>div {
+        width: 100%;
+        height: auto;
+    }
+
+    .values-container h2 {
+        font-size: 1.5em;
+    }
+
+    .values-container h3 {
+        font-size: 1.2em;
+    }
+
+    .story-text {
+        padding: 0 20px;
+        margin-top: 20px;
+    }
+
+    .story-text h1,
+    .story-text h2 {
+        font-size: 2em;
+    }
+
+    .story-text h2 {
+        text-shadow: 2px 2px 4px black;
+    }
+
+    .story-text li {
+        font-size: 4em;
+    }
+
+    .coach-title {
+        font-size: 2em;
+    }
+
+    .coaches-row {
+        flex-direction: column;
+        gap: 20px;
+    }
+
+    .coach-container {
+        margin-top: 0px;
+    }
+
+    .michael-container,
+    .jack-container {
+        padding: 5px;
+
+    }
+
+    .michael-image,
+    .jack-image {
+        width: 200px;
+        height: 200px;
+    }
+
+    .michael-name,
+    .jack-name {
+        font-size: 2em;
+        margin-bottom: 10px;
+    }
+
+    .michael-quote,
+    .jack-quote {
+        font-size: 1.5em;
+    }
+
+    .michael-text {
+        font-size: 1.3em;
+    }
+
+    .jack-text {
+        font-size: 1.2em;
+    }
+
+    .michael-title,
+    .jack-title {
+        font-size: 1.5em;
+    }
+}

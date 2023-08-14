@@ -100,3 +100,24 @@
     top: 50%;
     transform: translateY(-50%);
 }
+
+@media only screen and (max-width: 480px) {
+    .testimonial-container {
+        padding: 1em;
+    }
+
+    .testimonial-image {
+        width: 180px;
+        height: 180px;
+    }
+
+    .testimonial-text {
+        font-size: 1em;
+    }
+
+    .testimonial-button {
+        width: 30px;
+        height: 30px;
+        font-size: 16px;
+    }
+}
