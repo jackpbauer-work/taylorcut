@@ -130,7 +130,7 @@ function Upcoming() {
     <h1 className="activities-title">what will we be doing?</h1>
     <div className="activities-content">
         <ul>
-            <li>daily yoga, meditation & breathwork</li>
+            <li>daily strength, yoga, & meditation</li>
             <li>local, seasonal plant-based meals</li>
             <li>cacao ceremony</li>
             <li>group sauna (temescal ceremony)</li>

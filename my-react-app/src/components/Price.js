@@ -1,11 +1,12 @@
 import React, {useState, useEffect} from 'react';
-import { Link } from 'react-router-dom';
+import { useNavigate } from 'react-router-dom';
 import '../css/Price.css';
 
 
 function Price() {
     const [offsetY, setOffsetY] = useState(0);
-    const handleScroll = () => setOffsetY(window.pageYOffset);  
+    const handleScroll = () => setOffsetY(window.pageYOffset); 
+    const navigate = useNavigate();
 
     const [isVisible, setIsVisible] = useState(false);
     const [isVisible2, setIsVisible2] = useState(false);
@@ -32,18 +33,13 @@ const whatsthedeal = {
     description: 'Cost, what\'s included, and payment options',
 }
 
-  const handleReserveSpot = () => {
-    // Use the Link component to navigate to /finish
-    // Note: Make sure you have set up the appropriate route in your application
-    return <Link to="/finish">Go to Finish</Link>;
-  };
+const handleReserveSpot = () => {
+    navigate('/finish');
+};
 
-  const handleFullPayment = () => {
-    // Use the Link component to navigate to /finish
-    // Note: Make sure you have set up the appropriate route in your application
-    return <Link to="/finish">Go to Finish</Link>;
-  };
-
+const handleFullPayment = () => {
+    navigate('/finish');
+};
 
     return (
         <div className="price-page">
