@@ -1,4 +1,5 @@
 import React, {useState, useEffect} from 'react';
+import { Link } from 'react-router-dom';
 import '../css/Price.css';
 
 
@@ -31,13 +32,18 @@ const whatsthedeal = {
     description: 'Cost, what\'s included, and payment options',
 }
 
-    const handleReserveSpot = () => {
-        window.location.href = '/finish';
-    };
+  const handleReserveSpot = () => {
+    // Use the Link component to navigate to /finish
+    // Note: Make sure you have set up the appropriate route in your application
+    return <Link to="/finish">Go to Finish</Link>;
+  };
 
-    const handleFullPayment = () => {
-        window.location.href = '/finish';
-    };
+  const handleFullPayment = () => {
+    // Use the Link component to navigate to /finish
+    // Note: Make sure you have set up the appropriate route in your application
+    return <Link to="/finish">Go to Finish</Link>;
+  };
+
 
     return (
         <div className="price-page">
