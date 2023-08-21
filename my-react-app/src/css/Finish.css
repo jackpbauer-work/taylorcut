@@ -1,0 +1,27 @@
+.finish-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color: rgb(1, 31, 52);
+}
+
+.finish-content {
+    text-align: center;
+    font-family: 'Cormorant Garamond', serif;
+    color: #ebe8e0;
+}
+
+.finish-content p {
+    font-size: 25px;
+    line-height: 1.5;
+}
+
+.finish-content a {
+    color: #ebe8e0;
+    text-decoration: underline;
+}
+
+.finish-content a:hover {
+    color: #f8f8f8;
+}

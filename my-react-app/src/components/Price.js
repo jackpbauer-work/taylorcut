@@ -1,6 +1,7 @@
 import React, {useState, useEffect} from 'react';
 import '../css/Price.css';
 
+
 function Price() {
     const [offsetY, setOffsetY] = useState(0);
     const handleScroll = () => setOffsetY(window.pageYOffset);  
@@ -31,11 +32,11 @@ const whatsthedeal = {
 }
 
     const handleReserveSpot = () => {
-        window.location.href = 'https://buy.stripe.com/9AQaIDd9H0IV7f2bIO';
+        window.location.href = '/finish';
     };
 
     const handleFullPayment = () => {
-        window.location.href = 'https://buy.stripe.com/28o8AvedL2R38j67sw';
+        window.location.href = '/finish';
     };
 
     return (
@@ -81,22 +82,22 @@ const whatsthedeal = {
                 </div>
             </div>
 
-            <div className="payment-options">
-                <h2 className='payment-options-h2'>payment options</h2>
-                <div className="option">
-                    <h3 className="deposit">RESERVE YOUR SPOT (deposit)</h3>
-                    <p>submit $500 deposit by 9/15 to receive $150 early bird discount </p>
-                    <button className="payment-btn-deposit" onClick={handleReserveSpot}>pay deposit</button>
-                </div>
-                <div className="option">
-                    <h3>PAY IN FULL</h3>
-                    <p className="in-full">submit entire payment by 9/15 to receive raffel ticket for</p>
-                    <p className='winner'>🛫 FREE ROUND TRIP AIRFARE 🛫 </p>
-                    <button className="payment-btn-full" onClick={handleFullPayment}>pay in full</button>
-                </div>
-            </div>
+<div className="payment-options">
+    <h2 className="payment-options-h2">payment options</h2>
+    <div className="option">
+        <h3 className="deposit">RESERVE YOUR SPOT (deposit)</h3>
+        <p>submit $500 deposit by 9/15 to receive $150 early bird discount</p>
+        <button className="payment-btn-deposit" onClick={handleReserveSpot}>pay deposit</button>
+    </div>
+    <div className="option">
+        <h3>PAY IN FULL</h3>
+        <p className="in-full">submit entire payment by 9/15 to receive raffle ticket for</p>
+        <p className="winner">🛫 FREE ROUND TRIP AIRFARE 🛫</p>
+        <button className="payment-btn-full" onClick={handleFullPayment}>pay in full</button>
         </div>
-        </div>
+    </div>
+    </div>
+    </div>
     );
 };
 

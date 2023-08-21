@@ -10,6 +10,7 @@ import Inquiry from './components/Inquiry';
 import ScrollButton from './components/ScrollButton';
 import Price from './components/Price';
 import ScrollToTop from './components/ScrollToTop';
+import Finish from './components/Finish';
 import './App.css';
 
 // This function is called by the `LoginPage` component when the user logs in
@@ -41,6 +42,7 @@ function App() {
         <Route path="/about" element={<About />} />
         <Route path="/faqs" element={<FAQs />} />
         <Route path="/inquiry" element={<Inquiry />} />
+        <Route path="/finish" element={<Finish />} />
         <Route path="*" element={<NotFound />} />
       </Routes>
       <ScrollButton />
