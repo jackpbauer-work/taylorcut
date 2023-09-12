@@ -10,98 +10,71 @@ function Inquiry() {
   const [successMessage, setSuccessMessage] = useState('');
   const [isLoading, setIsLoading] = useState(false);
 
-  const handleSubmit = async (e) => {
+  const handleSubmit = (e) => {
     e.preventDefault();
-
     setIsLoading(true);
-
-    try {
-      const response = await fetch('http://localhost:3001/submit_inquiry', {
-        method: 'POST',
-        headers: {
-          'Content-Type': 'application/json'
-        },
-        body: JSON.stringify({
-          name,
-          email,
-          phone_number: phone,
-          message
-        })
-      });
-
-      if (response.ok) {
-        setSuccessMessage('Inquiry submitted successfully!');
-        setErrorMessage('');
-        setName('');
-        setEmail('');
-        setPhone('');
-        SetMessage('');
-        setIsLoading(false);
-      } else {
-        setErrorMessage('An error occurred while submitting the inquiry.');
-        setSuccessMessage('');
-        setIsLoading(false);
-      }
-    } catch (error) {
-      setErrorMessage('An error occurred while submitting the inquiry.');
-      setSuccessMessage('');
-      setIsLoading(false);
-    }
+    // You'll handle success and error messages differently if you do AJAX form submission.
+    // For simplicity, here's just setting the isLoading state.
   };
 
-return (
-  <div className="inquiry-container">
-    <div className="inquiry-overlay">
-      <form className="inquiry-form" onSubmit={handleSubmit}>
-        <h1>Inquiry Form</h1>
-        {errorMessage && <div className="error-message">{errorMessage}</div>}
-        {successMessage && <div className="success-message">{successMessage}</div>}
-        <div className="form-group">
-          <input
-            type="text"
-            id="name"
-            value={name}
-            onChange={(e) => setName(e.target.value)}
-            required
-          />
-          <span className="form-label">Name</span>
-        </div>
-        <div className="form-group">
-          <input
-            type="email"
-            id="email"
-            value={email}
-            onChange={(e) => setEmail(e.target.value)}
-            required
-          />
-          <span className="form-label">Email</span>
-        </div>
-        <div className="form-group">
-          <input
-            type="tel"
-            id="phone"
-            value={phone}
-            onChange={(e) => setPhone(e.target.value)}
-            required
-          />
-          <span className="form-label">Phone Number</span>
-        </div>
-        <div className="form-group">
-          <textarea
-            id="message"
-            value={message}
-            onChange={(e) => SetMessage(e.target.value)}
-            required
-          />
-          <span className="form-label">Message</span>
-        </div>
-        <button type="submit" disabled={isLoading}>
-          {isLoading ? 'Submitting...' : 'Submit'}
-        </button>
-      </form>
+  return (
+    <div className="inquiry-container">
+      <div className="inquiry-overlay">
+        <form className="inquiry-form" onSubmit={handleSubmit} name="inquiryForm" data-netlify="true">
+          <h1>inquiry form</h1>
+          <input type="hidden" name="form-name" value="inquiryForm" />
+          {errorMessage && <div className="error-message">{errorMessage}</div>}
+          {successMessage && <div className="success-message">{successMessage}</div>}
+          <div className="form-group">
+            <input
+              type="text"
+              id="name"
+              name="name"
+              value={name}
+              onChange={(e) => setName(e.target.value)}
+              required
+            />
+            <span className="form-label">name</span>
+          </div>
+          <div className="form-group">
+            <input
+              type="email"
+              id="email"
+              name="email"
+              value={email}
+              onChange={(e) => setEmail(e.target.value)}
+              required
+            />
+            <span className="form-label">email</span>
+          </div>
+          <div className="form-group">
+            <input
+              type="tel"
+              id="phone"
+              name="phone"
+              value={phone}
+              onChange={(e) => setPhone(e.target.value)}
+              required
+            />
+            <span className="form-label">phone number</span>
+          </div>
+          <div className="form-group">
+            <textarea
+              id="message"
+              name="message"
+              value={message}
+              onChange={(e) => SetMessage(e.target.value)}
+              required
+            />
+            <span className="form-label">message</span>
+          </div>
+          <button type="submit" disabled={isLoading}>
+            {isLoading ? 'Submitting...' : 'Submit'}
+          </button>
+        </form>
+      </div>
     </div>
-  </div>
-);
+  );
 }
 
 export default Inquiry;
